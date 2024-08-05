@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: helvetica, Arial, sans-serif;
+  font-size: 18px;
+  background: url('https://t4.ftcdn.net/jpg/02/80/54/87/360_F_280548787_qnGHPsNXK5coU0zQKiflcvAPL9J2ruZX.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 0;
+  font-family: "Fruktur", system-ui;
+  font-weight: 900;
+  font-size: 3em;
+  text-align: center;
+  color: #002D62;
+}
+
+.fruktur-regular-italic {
+  font-family: "Fruktur", system-ui;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.search-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.author-section {
+  margin-bottom: 10px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;  /* Center content horizontally */
+  align-items: flex-start;
+  width: 80%;  /* Adjust width to fit both containers */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.container-wrapper {
+  display: flex;
+  width: 100%; /* Ensure it takes full width of the parent */
+  justify-content: space-between;
+}
+
+.container {
+  width: 65%;  /* Adjust width as needed */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.quote-section {
+  text-align: center;
+}
+
+.quote-box {
+  border: 2px solid #ddd;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+#quote {
+  color: #444;
+  text-align: center;
+  font-size: 2.2em;
+  padding: 30px 20px;
+  font-family: "Cookie", cursive;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+#quote-author {
+  display: block;
+  text-align: right;
+  color: #666;
+  font-weight: 400;
+  font-style: italic;
+  margin-top: 10px;
+  font-family: "Cookie", cursive;
+  font-size: 1.8em;
+  line-height: 1.2;
+}
+
+.btn {
+  background-color: #002D62;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 250px;
+}
+
+.quotes-table-container {
+  width: 35%;  /* Adjust width as needed */
+  margin-left: 20px;
+  display: none;  /* Hide the table container by default */
+  background-color: white;
+  padding: 30px 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.quotes-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.quotes-table th, .quotes-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.quotes-table th {
+  background-color: #002D62;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-section {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .input, .btn {
+    width: 100%;
+  }
+
+  .container {
+    padding: 15px;
+    width: 100%;  /* Full width on smaller screens */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #quote {
+    font-size: 1.8em;
+  }
+
+  #quote-author {
+    font-size: 1.4em;
+  }
+
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .quotes-table-container {
+    margin-left: 0;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .quotes-table {
+    width: 100%;
+  }
+}

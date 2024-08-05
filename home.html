@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Quote Generator</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Import Cookie font -->
+  <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="header">
+    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <h1 class="fruktur-regular-italic"><B>"Quote Of The Day"</b></h1>
+    <div class="search-section">
+      <input type="text" id="author-input" placeholder="Enter the author name to search" class="input">
+      <button id="search-btn" class="btn">Search</button>
+    </div>
+  </div>
+  <div class="author-section">
+    <div id="author"></div>
+  </div>
+  <div class="main-content">
+  <div class="container-wrapper">
+    <div class="container">
+      <div class="quote-box">
+        <p id="quote" class="cookie-regular">"Click the button to get a quote!"</p>
+        <small id="quote-author" class="cookie-regular">- Author</small>
+      </div>
+      <button id="btn" class="btn">Get Quote</button>
+    </div>
+    <div class="quotes-table-container" id="quotes-table-container">
+      <table id="quotes-table" class="quotes-table">
+        <thead>
+          <tr>
+            <th>Quote</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Quotes will be dynamically inserted here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+  <script src="sample.js"></script>
+</body>
+</html>
